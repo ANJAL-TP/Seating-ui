@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+
+<div id="toast" class="toast hidden"></div>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+    <div class="logo-section">
+        <div class="logo-icon">🎓</div>
+        <div class="logo-text">
+            <span class="brand">SeatAlloc</span>
+            <small>Admin Panel</small>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../dashboard/dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="../students/upload.html">Students</a></li>
+        <li><a href="../exams/config.html">Exam & Halls</a></li>
+        <li><a href="../seating/generate.html">Generate Seating</a></li>
+        <li><a href="../seating/view.html">View Seating</a></li>
+        <li><a href="../profile/profile.html">Profile</a></li>
+    </ul>
+
+    <div class="sidebar-footer">
+        <a href="#">Logout</a>
+    </div>
+
+</aside>
+
+    <!-- Main Section -->
+    <div class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h3>College Exam Seating Allocation System</h3>
+            </div>
+
+            <div class="header-right">
+                <span class="user-name">Admin User</span>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="content">
+
+            <h2>Dashboard Overview</h2>
+
+            <div class="card-container">
+
+                <div class="dashboard-card">
+                    <h3>Total Students</h3>
+                    <p class="card-number">1250</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Total Halls</h3>
+                    <p class="card-number">25</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Pending Allocations</h3>
+                    <p class="card-number">3</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Last Seating Status</h3>
+                    <p class="card-status success">Generated</p>
+                </div>
+
+            </div>
+
+            <h3 class="section-title">System Alerts</h3>
+
+            <div class="alert warning">
+                ⚠ Hall capacity is less than total students for upcoming exam.
+            </div>
+
+            <div class="alert error">
+                ❌ Some students are missing subject mapping.
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>

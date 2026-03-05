@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>generate</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+
+<div class ="app">
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Paste sidebar.html content here for now -->
+                
+                    <div class="logo-section">
+                    <div class="logo-icon">🎓</div>
+                        <div class="logo-text">
+                            <span class="brand">SeatAlloc</span>
+                            <small>Admin Panel</small>
+                        </div>
+                    </div>
+
+                        <ul class="nav-links">
+                            <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+                            <li><a href="../students/upload.html">Students</a></li>
+                            <li><a href="../exams/config.html">Exam & Halls</a></li>
+                            <li><a href="../seating/generate.html">Generate Seating</a></li>
+                            <li><a href="../seating/view.html">View Seating</a></li>
+                            <li><a href="../profile/profile.html">Profile</a></li>
+                            <li class="logout"><a href="#">Logout</a></li>
+                        </ul>
+                
+            </aside>
+     
+
+
+            <div class="main">
+
+                    <!-- Header -->
+                    <div class="header">
+                            <!-- Paste header.html content here for now -->
+                            <div class="header-left">
+                                <h3>College Exam Seating Allocation System</h3>
+                            </div>
+
+                            <div class="header-right">
+                                <span class="user-name">Admin User</span>
+                            </div>
+                    </header>
+            </div>
+
+        <main class="content">
+            <h2>Seating Generation</h2>
+            <div class="generate-card">
+
+                <label>Select Exam</label>
+                <select>
+                    <option>Mid Semester Exam</option>
+                    <option>Internal Exam 1</option>
+                </select>
+
+                <label>Select Halls</label>
+                <div class="hall-list">
+                    <label><input type="checkbox"> Hall A</label>
+                    <label><input type="checkbox"> Hall B</label>
+                    <label><input type="checkbox"> Hall C</label>
+                </div>
+
+                <div class="summary-box">
+                    <p>Total Students: <strong>1200</strong></p>
+                    <p>Total Available Seats: <strong>1350</strong></p>
+                </div>
+
+                <button class="btn-primary generate-btn" id="generateBtn">
+                Generate Seating
+                </button>
+
+            </div>
+        </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Upload</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <div class="logo-icon">🎓</div>
+            <div class="logo-text">
+                <span class="brand">SeatAlloc</span>
+                <small>Admin Panel</small>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="../students/upload.html" class="active">Students</a></li>
+            <li><a href="../exams/config.html">Exam & Halls</a></li>
+            <li><a href="../seating/generate.html">Generate Seating</a></li>
+            <li><a href="../seating/view.html">View Seating</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+            <li class="logout"><a href="#">Logout</a></li>
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Section -->
+    <div class="main">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h3>College Exam Seating Allocation System</h3>
+            </div>
+
+            <div class="header-right">
+                Admin User
+            </div>
+        </header>
+
+
+        <!-- Page Content -->
+        <main class="content">
+
+            <h2>Student Data Management</h2>
+
+            <div class="upload-section">
+
+                <h3>Upload Student CSV</h3>
+
+                <div class="upload-box">
+                    <input type="file" id="csvFile">
+                    <p>Drag & drop CSV file here or click to upload</p>
+                </div>
+
+                <button class="btn-primary">Upload</button>
+                <button class="btn-secondary">Download Sample Template</button>
+
+            </div>
+
+
+            <h3 class="section-title">Preview</h3>
+
+            <table class="preview-table">
+                <thead>
+                    <tr>
+                        <th>Register No</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Subject</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>2023001</td>
+                        <td>John Doe</td>
+                        <td>CSE</td>
+                        <td>Maths</td>
+                        <td class="valid">Valid</td>
+                    </tr>
+
+                    <tr class="invalid-row">
+                        <td>2023002</td>
+                        <td></td>
+                        <td>ECE</td>
+                        <td>Physics</td>
+                        <td class="invalid">Missing Name</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h3 class="section-title">Upload History</h3>
+
+            <table class="history-table">
+                <thead>
+                    <tr>
+                        <th>File Name</th>
+                        <th>Date</th>
+                        <th>Rows</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>students_jan.csv</td>
+                        <td>12-02-2026</td>
+                        <td>1200</td>
+                        <td class="success">Success</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>

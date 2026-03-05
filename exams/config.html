@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Config</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+
+<body>
+
+<script src="../static/js/hall.js"></script>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo-section">
+            <div class="logo-icon">🎓</div>
+            <div class="logo-text">
+                <span class="brand">SeatAlloc</span>
+                <small>Admin Panel</small>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../dashboard/dashboard.html">Dashboard</a></li>
+            <li><a href="../students/upload.html">Students</a></li>
+            <li><a href="../exams/config.html" class="active">Exam & Halls</a></li>
+            <li><a href="../seating/generate.html">Generate Seating</a></li>
+            <li><a href="../seating/view.html">View Seating</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+            <li class="logout"><a href="#">Logout</a></li>
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Section -->
+    <div class="main">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="header-left">
+                <h3>College Exam Seating Allocation System</h3>
+            </div>
+
+            <div class="header-right">
+                <span class="user-name">Admin User</span>
+            </div>
+
+        </header>
+
+
+        <!-- Page Content -->
+        <main class="content">
+
+            <h2>Exam & Hall Configuration</h2>
+
+            <div class="config-container">
+
+                <!-- Exam Section -->
+                <div class="config-card">
+
+                    <h3>Create Exam</h3>
+
+                    <label>Exam Name</label>
+                    <input type="text" placeholder="Mid Semester Exam">
+
+                    <label>Exam Date</label>
+                    <input type="date">
+
+                    <label>Subjects (comma separated)</label>
+                    <input type="text" placeholder="Maths, Physics, Chemistry">
+
+                    <button class="btn-primary">Save Exam</button>
+
+                </div>
+
+
+                <!-- Hall Section -->
+                <div class="config-card">
+
+                    <h3>Add Hall</h3>
+
+                    <label>Hall Name</label>
+                    <input type="text" placeholder="Hall A">
+
+                    <label>Rows</label>
+                    <input type="number" id="rows">
+
+                    <label>Columns</label>
+                    <input type="number" id="cols">
+
+                    <label>Seats per Bench</label>
+                    <select id="seatsPerBench">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <p class="capacity-text">
+                        Total Capacity: <strong id="capacity">0</strong>
+                    </p>
+
+                    <div class="button-group">
+                        <button class="btn-secondary">Add Hall</button>
+                        <button class="btn-primary">Save Halls</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
